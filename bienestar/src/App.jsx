@@ -4,8 +4,17 @@ import './App.css';
 
 const Inicio = lazy(() => import('./pages/Inicio'));
 const Dietas = lazy(() => import('./pages/Dietas'));
+const Consejos = lazy(() => import('./pages/Consejos'));
+const Contacto = lazy(() => import('./pages/Contacto'));
 const Mediterranea = lazy(() => import('./pages/dietas/Mediterranea'));
 const Keto = lazy(() => import('./pages/dietas/Keto'));
+const Vegana = lazy(() => import('./pages/dietas/Vegana'));
+const Paleo = lazy(() => import('./pages/dietas/Paleo'));
+const Dash = lazy(() => import('./pages/dietas/Dash'));
+const Flexitariana = lazy(() => import('./pages/dietas/Flexitariana'));
+const Hidratate = lazy(() => import('./pages/consejos/Hidratate'));
+const Ejercicio = lazy(() => import('./pages/consejos/Ejercicio'));
+const Descanso = lazy(() => import('./pages/consejos/Descanso'));
 
 function App() {
   return (
@@ -14,8 +23,17 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/dietas" element={<Dietas />} />
-          <Route path="/mediterranea" element={<Mediterranea />} />
-          <Route path="/keto" element={<Keto />} />
+          <Route path="/consejos" element={<Consejos />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/dietas/mediterranea" element={<Mediterranea />} />
+          <Route path="/dietas/keto" element={<Keto />} />
+          <Route path="/dietas/vegana" element={<Vegana />} />
+          <Route path="/dietas/paleo" element={<Paleo />} />
+          <Route path="/dietas/dash" element={<Dash />} />
+          <Route path="/dietas/flexitariana" element={<Flexitariana />} />
+          <Route path="/consejos/hidratacion" element={<Hidratate />} />
+          <Route path="/consejos/ejercicio" element={<Ejercicio />} />
+          <Route path="/consejos/descanso" element={<Descanso />} />
         </Routes>
       </Suspense>
     </Router>

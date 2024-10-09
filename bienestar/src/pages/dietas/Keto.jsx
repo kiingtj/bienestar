@@ -20,7 +20,7 @@ const Keto = () => {
                 <section className="py-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <img src="/images/dietas/keto.jpg" alt="Dieta Keto" className="w-full h-64 object-cover rounded-lg shadow-md" />
+                            <img src="/assets/images/dietas/keto.jpg" alt="Dieta Keto" className="w-full h-64 object-cover rounded-lg shadow-md" />
                         </div>
                         <div className="flex flex-col justify-center">
                             <h2 className="text-3xl font-bold text-green-700 mb-4">¿Qué es la Dieta Keto?</h2>

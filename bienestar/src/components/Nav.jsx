@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Obtiene la ubicación actual
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,7 +14,7 @@ const Nav = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="/images/logo/logo.png"
+            src="/assets/images/logo/logo.png"
             className="h-8"
             alt="DietasBalance Logo"
           />
@@ -49,8 +50,8 @@ const Nav = () => {
             <li>
               <Link
                 to="/"
-                className="block py-2 px-3 text-white bg-green-600 rounded md:bg-transparent md:text-green-600 md:p-0"
-                aria-current="page"
+                className={`block py-2 px-3 rounded md:bg-transparent md:hover:text-green-600 md:p-0 ${location.pathname === '/' ? 'text-green-100 md:text-green-600 bg-green-700' : 'text-gray-800'}`}
+                aria-current={location.pathname === '/' ? 'page' : undefined}
               >
                 Inicio
               </Link>
@@ -58,7 +59,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/dietas"
-                className="block py-2 px-3 text-gray-800 rounded hover:bg-green-200 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0"
+                className={`block py-2 px-3 rounded md:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ${location.pathname === '/dietas' ? 'text-green-100 md:text-green-600 bg-green-700' : 'text-gray-800'}`}
               >
                 Dietas
               </Link>
@@ -66,7 +67,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/consejos"
-                className="block py-2 px-3 text-gray-800 rounded hover:bg-green-200 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0"
+                className={`block py-2 px-3 rounded md:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ${location.pathname === '/consejos' ? 'text-green-100 md:text-green-600 bg-green-700' : 'text-gray-800'}`}
               >
                 Consejos
               </Link>
@@ -74,7 +75,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/contacto"
-                className="block py-2 px-3 text-gray-800 rounded hover:bg-green-200 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0"
+                className={`block py-2 px-3 rounded md:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ${location.pathname === '/contacto' ? 'text-green-100 md:text-green-600 bg-green-700' : 'text-gray-800'}`}
               >
                 Contacto
               </Link>
