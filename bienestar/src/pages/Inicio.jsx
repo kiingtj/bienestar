@@ -8,7 +8,7 @@ const Inicio = () => {
         <div className='bg-gray-100'>
             <Nav />
             <main className="flex flex-col items-center justify-center text-center py-20">
-                <section className="w-full h-64 flex flex-col items-center justify-center">
+                <section className="w-full md:h-64 h-96 flex flex-col items-center justify-center">
                     <h2 className="text-5xl font-bold text-green-700 mb-4">Bienvenido a DietasBalance</h2>
                     <div className='text-justify md:text-center'>
                         <p className="md:text-xl text-lg mt-4 text-green-800 max-w-2xl mb-8 mx-4">
@@ -27,7 +27,7 @@ const Inicio = () => {
                     </div>
                 </section>
 
-                <section className="w-full py-16 md:px-0 px-4">
+                <section className="w-full py-10 md:px-0 px-4">
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Card 1 */}
                         <div className="flex flex-col items-center p-6 bg-green-50 rounded-lg shadow-lg border border-green-300">

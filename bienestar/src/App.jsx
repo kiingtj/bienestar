@@ -6,6 +6,7 @@ const Inicio = lazy(() => import('./pages/Inicio'));
 const Dietas = lazy(() => import('./pages/Dietas'));
 const Consejos = lazy(() => import('./pages/Consejos'));
 const Contacto = lazy(() => import('./pages/Contacto'));
+const Privacy = lazy(() => import('./pages/Privacy'));
 const Mediterranea = lazy(() => import('./pages/dietas/Mediterranea'));
 const Keto = lazy(() => import('./pages/dietas/Keto'));
 const Vegana = lazy(() => import('./pages/dietas/Vegana'));
@@ -25,6 +26,7 @@ function App() {
           <Route path="/dietas" element={<Dietas />} />
           <Route path="/consejos" element={<Consejos />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/dietas/mediterranea" element={<Mediterranea />} />
           <Route path="/dietas/keto" element={<Keto />} />
           <Route path="/dietas/vegana" element={<Vegana />} />
