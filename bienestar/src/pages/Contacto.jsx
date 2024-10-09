@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import emailjs from 'emailjs-com';
+import AdSenseBanner from '../components/AdSenseBanner';
 
 const Contacto = () => {
     const [formData, setFormData] = useState({
@@ -108,6 +109,7 @@ const Contacto = () => {
                         </button>
                     </div>
                 </form>
+                <AdSenseBanner />
             </div>
             <Footer />
         </div>

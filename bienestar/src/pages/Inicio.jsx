@@ -9,7 +9,7 @@ const Inicio = () => {
             <Nav />
             <main className="flex flex-col items-center justify-center text-center py-20">
                 <section className="w-full md:h-64 h-96 flex flex-col items-center justify-center">
-                    <h2 className="text-5xl font-bold text-green-700 mb-4">Bienvenido a DietasBalance</h2>
+                    <h1 className="text-5xl font-bold text-green-700 mb-4">Bienvenido a DietasBalance</h1>
                     <div className='text-justify md:text-center'>
                         <p className="md:text-xl text-lg mt-4 text-green-800 max-w-2xl mb-8 mx-4">
                             Tu guía para llevar una vida saludable y equilibrada. Encuentra la dieta perfecta para ti,

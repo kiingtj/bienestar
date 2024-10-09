@@ -1,45 +1,37 @@
-import { writeFileSync } from 'fs';
-import { join } from 'path';
+// generate-sitemap.mjs
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { createWriteStream } from 'fs';
+import { resolve } from 'path';
 
-// Define the base URL of your site
-const BASE_URL = 'https://dietasbalance.vercel.app'; // Cambia esto por el dominio real de tu web
+const sitemap = new SitemapStream({ hostname: 'https://dietasbalance.vercel.app' });
 
-// Define the pages you want to include in your sitemap
-const pages = [
-    '', // Home
-    'contacto',
-    'consejos',
-    'privacy',
-    'dietas',
-    'dash',
-    'flexitariana',
-    'keto',
-    'mediterranea',
-    'paleo',
-    'hidratate',
-    'ejercicio',
-    'descanso',
+const links = [
+  { url: '/', changefreq: 'daily', priority: 1.0 },
+  { url: '/contacto', changefreq: 'daily', priority: 0.8 },
+  { url: '/consejos', changefreq: 'daily', priority: 0.5 },
+  { url: '/privacy', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas/dash', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas/flexitariana', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas/keto', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas/mediterranea', changefreq: 'daily', priority: 0.8 },
+  { url: '/dietas/paleo', changefreq: 'daily', priority: 0.8 },
+  { url: '/consejos/hidratacion', changefreq: 'daily', priority: 0.8 },
+  { url: '/consejos/ejercicio', changefreq: 'daily', priority: 0.8 },
+  { url: '/consejos/descanso', changefreq: 'daily', priority: 0.8 },
 
 ];
 
-// Generate the sitemap content
-const generateSitemap = () => {
-    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    ${pages.map(page => `
-    <url>
-        <loc>${BASE_URL}/${page}</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    `).join('')}
-</urlset>`;
+links.forEach(link => sitemap.write(link));
+sitemap.end();
 
-    // Write the sitemap.xml file
-    writeFileSync(join(process.cwd(), 'public', 'sitemap.xml'), sitemapContent.trim());
-    console.log('Sitemap generated successfully!');
-};
-
-// Run the sitemap generator
-generateSitemap();
+streamToPromise(sitemap)
+  .then((data) => {
+    const writeStream = createWriteStream(resolve('public', 'sitemap.xml'));
+    writeStream.write(data);
+    writeStream.end();
+    console.log('Sitemap creado exitosamente!');
+  })
+  .catch((err) => {
+    console.error('Error al crear el sitemap:', err);
+  });
