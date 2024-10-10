@@ -2,10 +2,15 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Dietas = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>DietasBalance - 6 Dietas para comenzar a cuidar tu salud.</title>
+                <meta name="description" content="Bienvenido a la página de dietas, donde encontrarás 6 tipos de dietas, con todos sus alimentos recomendables y los que debes evitar." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">
