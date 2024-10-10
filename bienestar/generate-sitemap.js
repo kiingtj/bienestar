@@ -7,18 +7,18 @@ const sitemap = new SitemapStream({ hostname: 'https://dietasbalance.vercel.app'
 
 const links = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/contacto', changefreq: 'daily', priority: 0.8 },
-  { url: '/consejos', changefreq: 'daily', priority: 0.5 },
-  { url: '/privacy', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas/dash', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas/flexitariana', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas/keto', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas/mediterranea', changefreq: 'daily', priority: 0.8 },
-  { url: '/dietas/paleo', changefreq: 'daily', priority: 0.8 },
-  { url: '/consejos/hidratacion', changefreq: 'daily', priority: 0.8 },
-  { url: '/consejos/ejercicio', changefreq: 'daily', priority: 0.8 },
-  { url: '/consejos/descanso', changefreq: 'daily', priority: 0.8 },
+  { url: '/contacto', changefreq: 'weekly', priority: 0.8 },
+  { url: '/consejos', changefreq: 'weekly', priority: 0.8 },
+  { url: '/privacy', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas/dash', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas/flexitariana', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas/keto', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas/mediterranea', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dietas/paleo', changefreq: 'weekly', priority: 0.8 },
+  { url: '/consejos/hidratacion', changefreq: 'weekly', priority: 0.8 },
+  { url: '/consejos/ejercicio', changefreq: 'weekly', priority: 0.8 },
+  { url: '/consejos/descanso', changefreq: 'weekly', priority: 0.8 },
 
 ];
 
