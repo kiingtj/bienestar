@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 
 const Inicio = lazy(() => import('./pages/Inicio'));
@@ -19,26 +20,28 @@ const Descanso = lazy(() => import('./pages/consejos/Descanso'));
 
 function App() {
   return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/dietas" element={<Dietas />} />
-          <Route path="/consejos" element={<Consejos />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/dietas/mediterranea" element={<Mediterranea />} />
-          <Route path="/dietas/keto" element={<Keto />} />
-          <Route path="/dietas/vegana" element={<Vegana />} />
-          <Route path="/dietas/paleo" element={<Paleo />} />
-          <Route path="/dietas/dash" element={<Dash />} />
-          <Route path="/dietas/flexitariana" element={<Flexitariana />} />
-          <Route path="/consejos/hidratacion" element={<Hidratate />} />
-          <Route path="/consejos/ejercicio" element={<Ejercicio />} />
-          <Route path="/consejos/descanso" element={<Descanso />} />
-        </Routes>
-      </Suspense>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/dietas" element={<Dietas />} />
+            <Route path="/consejos" element={<Consejos />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/dietas/mediterranea" element={<Mediterranea />} />
+            <Route path="/dietas/keto" element={<Keto />} />
+            <Route path="/dietas/vegana" element={<Vegana />} />
+            <Route path="/dietas/paleo" element={<Paleo />} />
+            <Route path="/dietas/dash" element={<Dash />} />
+            <Route path="/dietas/flexitariana" element={<Flexitariana />} />
+            <Route path="/consejos/hidratacion" element={<Hidratate />} />
+            <Route path="/consejos/ejercicio" element={<Ejercicio />} />
+            <Route path="/consejos/descanso" element={<Descanso />} />
+          </Routes>
+        </Suspense>
+      </Router>
+    </HelmetProvider>
   )
 }
 
