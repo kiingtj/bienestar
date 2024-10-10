@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet-async';
 import AdSenseBanner from '../components/AdSenseBanner';
 
 const Contacto = () => {
@@ -53,6 +54,10 @@ const Contacto = () => {
 
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>DietasBalance - Contacto</title>
+                <meta name="description" content="Contacta con nosotros para aportar información sobre tu dieta ideal y para ayudarte a mejorar tu salud." />
+            </Helmet>
             <Nav />
             <div className="container mx-auto py-12 px-6 md:px-12">
                 <h2 className="text-5xl font-bold text-center text-green-600 mb-8">Contacta con nosotros</h2>
@@ -109,7 +114,7 @@ const Contacto = () => {
                         </button>
                     </div>
                 </form>
-                <AdSenseBanner />
+                
             </div>
             <Footer />
         </div>
