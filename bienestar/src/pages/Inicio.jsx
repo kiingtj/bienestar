@@ -2,10 +2,15 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Inicio = () => {
     return (
         <div className='bg-gray-100'>
+            <Helmet>
+                <title>Dietas Balance - Inicio.</title>
+                <meta name="description" content="Bienvenido a la página que te resolverá las dudas sobre las dietas y sobre como mejorar tu salud." />
+            </Helmet>
             <Nav />
             <main className="flex flex-col items-center justify-center text-center py-20">
                 <section className="w-full md:h-64 h-96 flex flex-col items-center justify-center">
@@ -31,7 +36,7 @@ const Inicio = () => {
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Card 1 */}
                         <div className="flex flex-col items-center p-6 bg-green-50 rounded-lg shadow-lg border border-green-300">
-                            <img src="/assets/images/inicio/dieta.jpg" alt="Dieta saludable" className="h-48 w-full object-cover rounded-md mb-4" />
+                            <img src="/assets/images/inicio/dieta.webp" alt="Dieta saludable" className="h-48 w-full object-cover rounded-md mb-4" />
                             <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Personalizada</h3>
                             <p className="text-green-800">
                                 Encuentra un plan de alimentación diseñado para tus necesidades específicas y objetivos de salud.
@@ -40,7 +45,7 @@ const Inicio = () => {
 
                         {/* Card 2 */}
                         <div className="flex flex-col items-center p-6 bg-green-50 rounded-lg shadow-lg border border-green-300">
-                            <img src="/assets/images/inicio/receta.jpg" alt="Recetas saludables" className="h-48 w-full object-cover rounded-md mb-4" />
+                            <img src="/assets/images/inicio/receta.webp" alt="Recetas saludables" className="h-48 w-full object-cover rounded-md mb-4" />
                             <h3 className="text-2xl font-semibold text-green-700 mb-2">Recetas Deliciosas</h3>
                             <p className="text-green-800">
                                 Descubre recetas que no solo son saludables, sino también deliciosas y fáciles de preparar.
@@ -49,7 +54,7 @@ const Inicio = () => {
 
                         {/* Card 3 */}
                         <div className="flex flex-col items-center p-6 bg-green-50 rounded-lg shadow-lg border border-green-300">
-                            <img src="/assets/images/inicio/salud.jpg" alt="Consejos de salud" className="h-48 w-full object-cover rounded-md mb-4" />
+                            <img src="/assets/images/inicio/salud.webp" alt="Consejos de salud" className="h-48 w-full object-cover rounded-md mb-4" />
                             <h3 className="text-2xl font-semibold text-green-700 mb-2">Consejos de Salud</h3>
                             <p className="text-green-800">
                                 Sigue nuestros consejos prácticos para mejorar tu bienestar general y alcanzar tus metas de salud.

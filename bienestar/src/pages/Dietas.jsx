@@ -25,7 +25,7 @@ const Dietas = () => {
 
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mt-8">
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/mediterranea.jpg" alt="Dieta Mediterránea" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/mediterranea.webp" alt="Dieta Mediterránea" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Mediterránea</h3>
                         <p className="text-green-800 mb-4">
                             Basada en alimentos frescos y naturales, esta dieta incluye frutas, verduras, pescado, aceite de oliva, y cereales integrales. Ayuda a mejorar la salud cardiovascular.
@@ -36,7 +36,7 @@ const Dietas = () => {
                     </div>
 
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/keto.jpg" alt="Dieta Keto" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/keto.webp" alt="Dieta Keto" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Keto</h3>
                         <p className="text-green-800 mb-4">
                             Esta dieta es alta en grasas y baja en carbohidratos. Pone al cuerpo en un estado de cetosis, ideal para la quema de grasas y pérdida de peso rápida.
@@ -47,7 +47,7 @@ const Dietas = () => {
                     </div>
 
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/vegana.jpg" alt="Dieta Vegana" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/vegana.webp" alt="Dieta Vegana" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Vegana</h3>
                         <p className="text-green-800 mb-4">
                             Esta dieta excluye todos los productos de origen animal, centrándose en alimentos de origen vegetal. Es rica en fibra, vitaminas y antioxidantes.
@@ -58,7 +58,7 @@ const Dietas = () => {
                     </div>
 
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/paleo.jpg" alt="Dieta Paleo" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/paleo.webp" alt="Dieta Paleo" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Paleo</h3>
                         <p className="text-green-800 mb-4">
                             Inspirada en la alimentación de los primeros humanos, esta dieta se basa en carnes magras, pescados, frutas, verduras y frutos secos.
@@ -69,7 +69,7 @@ const Dietas = () => {
                     </div>
 
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/dash.jpg" alt="Dieta DASH" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/dash.webp" alt="Dieta DASH" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta DASH</h3>
                         <p className="text-green-800 mb-4">
                             Diseñada para reducir la presión arterial, esta dieta incluye frutas, verduras, cereales integrales y productos lácteos bajos en grasa.
@@ -80,7 +80,7 @@ const Dietas = () => {
                     </div>
 
                     <div className="bg-white p-4 rounded-lg shadow-md">
-                        <img src="/assets/images/dietas/flexitariana.jpg" alt="Dieta Flexitariana" className="h-40 w-full object-cover rounded-md mb-4" />
+                        <img src="/assets/images/dietas/flexitariana.webp" alt="Dieta Flexitariana" className="h-40 w-full object-cover rounded-md mb-4" />
                         <h3 className="text-2xl font-semibold text-green-700 mb-2">Dieta Flexitariana</h3>
                         <p className="text-green-800 mb-4">
                             Una dieta mayoritariamente basada en vegetales, pero que permite el consumo ocasional de carne y productos animales.

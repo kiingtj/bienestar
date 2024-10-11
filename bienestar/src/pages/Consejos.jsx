@@ -21,7 +21,7 @@ const Consejos = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     {/* Consejo 1 */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="/assets/images/consejos/equilibrada.jpg" alt="Dieta equilibrada" className="w-full h-48 object-cover" />
+                        <img src="/assets/images/consejos/equilibrada.webp" alt="Dieta equilibrada" className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-2xl font-semibold text-green-700">1. Mantén una dieta equilibrada</h2>
                             <p className="text-gray-600 mb-4">
@@ -33,7 +33,7 @@ const Consejos = () => {
 
                     {/* Consejo 2 */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="/assets/images/consejos/agua.jpg" alt="Hidratación" className="w-full h-48 object-cover" />
+                        <img src="/assets/images/consejos/agua.webp" alt="Hidratación" className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-2xl font-semibold text-green-700">2. Hidrátate adecuadamente</h2>
                             <p className="text-gray-600 mb-4">
@@ -45,7 +45,7 @@ const Consejos = () => {
 
                     {/* Consejo 3 */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="/assets/images/consejos/ejercicio.jpg" alt="Ejercicio" className="w-full h-48 object-cover" />
+                        <img src="/assets/images/consejos/ejercicio.webp" alt="Ejercicio" className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-2xl font-semibold text-green-700">3. Haz ejercicio regularmente</h2>
                             <p className="text-gray-600 mb-4">
@@ -57,7 +57,7 @@ const Consejos = () => {
 
                     {/* Consejo 4 */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="/assets/images/consejos/sueno.jpg" alt="Sueño" className="w-full h-48 object-cover" />
+                        <img src="/assets/images/consejos/sueno.webp" alt="Sueño" className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-2xl font-semibold text-green-700">4. Duerme lo suficiente</h2>
                             <p className="text-gray-600 mb-4">
