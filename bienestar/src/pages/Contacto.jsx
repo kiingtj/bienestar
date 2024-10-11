@@ -55,7 +55,7 @@ const Contacto = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>DietasBalance - Contacto</title>
+                <title>Dietas Balance - Contacto</title>
                 <meta name="description" content="Contacta con nosotros para aportar información sobre tu dieta ideal y para ayudarte a mejorar tu salud." />
             </Helmet>
             <Nav />

@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Dash = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Dash (hipertensión arterial).</title>
+                <meta name="description" content="Con la dieta Dash podrás prevenir la hipertension arterial, y también podrás controlarla." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

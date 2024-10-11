@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Vegana = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Vegana (mejora tú salud).</title>
+                <meta name="description" content="Con la dieta Vegana aportarás un impacto positivo con el medio ambiente, mejorarás tu salud y controlarás tu beso eficientemente." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

@@ -8,7 +8,7 @@ const Dietas = () => {
     return (
         <div className="bg-gray-100">
             <Helmet>
-                <title>DietasBalance - 6 Dietas para comenzar a cuidar tu salud.</title>
+                <title>Dietas Balance - 6 Dietas para comenzar a cuidar tu salud.</title>
                 <meta name="description" content="Bienvenido a la página de dietas, donde encontrarás 6 tipos de dietas, con todos sus alimentos recomendables y los que debes evitar." />
             </Helmet>
             <Nav />

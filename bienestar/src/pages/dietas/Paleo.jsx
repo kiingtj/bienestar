@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Paleo = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Paleo (la dieta ancestral).</title>
+                <meta name="description" content="Con la dieta Paleo conseguirás reducir todos los azúcares, permitiendo a tu cuerpo bajar de peso de forma efectiva y sostenible." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

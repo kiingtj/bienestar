@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Flexitariana = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Flexitariana (reducir consumo de carne).</title>
+                <meta name="description" content="Con la dieta Flexitariana podrás reducir el consumo de carne centrándote en vegetales, aunque también podrás, en ocasiones, incluir carne y pescado." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Mediterranea = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Mediterránea (salud cardiovascular).</title>
+                <meta name="description" content="Con la dieta Mediterránea podrás reducir el riesgo de enfermedades que afectan al corazón y aumentar la circulación sanguínea." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

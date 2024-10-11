@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Privacy = () => {
     return (
         <div className="bg-gray-100 font-helvetica">
+            <Helmet>
+                <title>Dietas Balance - Politica de Privacidad.</title>
+                <meta name="description" content="Nos importa tu privacidad." />
+            </Helmet>
             <Nav />
             <div className="container mx-auto p-8">
                 <h1 className="text-4xl font-bold mb-6 text-gray-800">Política de Privacidad</h1>

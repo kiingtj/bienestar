@@ -1,10 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Keto = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - Dieta Keto (quemar grasa).</title>
+                <meta name="description" content="Con la dieta Keto podrás reducir la grasa sobrante que existe en el cuerpo al reducir tu cuerpo en un estado de cetosis." />
+            </Helmet>
             <Nav />
 
             <main className="max-w-7xl mx-auto py-10 px-4">

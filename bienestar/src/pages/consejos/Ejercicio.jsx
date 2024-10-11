@@ -2,10 +2,15 @@ import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Ejercicio = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - El Ejercicio.</title>
+                <meta name="description" content="Uno de los principales consejos para llevar una vida saludable y llena de energía es tener una buena base de actividad física." />
+            </Helmet>
             <Nav />
             <main className="max-w-screen-lg mx-auto p-6">
                 <h1 className="text-4xl font-bold text-green-600 mb-6 text-center">Ejercicio: ¡Actívate para una Vida Saludable!</h1>

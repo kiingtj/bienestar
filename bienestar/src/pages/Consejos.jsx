@@ -2,10 +2,15 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Consejos = () => {
     return (
         <div className="bg-gray-100">
+            <Helmet>
+                <title>Dietas Balance - 4 Consejos para comenzar a cuidarte a ti y a tu salud.</title>
+                <meta name="description" content="Bienvenido a la página de consejos, donde encontrarás 4 tipos consejos para implementar en tu dieta." />
+            </Helmet>
             <Nav />
             <main className="max-w-screen-lg mx-auto p-6">
                 <h1 className="md:text-4xl text-3xl font-bold text-green-600 mb-6 text-center">Consejos de Salud</h1>
